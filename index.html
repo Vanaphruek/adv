@@ -35,7 +35,7 @@
             let displayName = profile.displayName;
             let pictureUrl = profile.pictureUrl;
            
-            let url = "https://script.google.com/macros/s/AKfycbzoUJcJhCEaF2nuadbFHGSLGPVWv3n2wlpQvpZcYAoOqQfVg0doq5NDiyEH_pzhFw8Mhg/exec"+"&userId=" + userId + "&displayName=" + displayName + "&pictureUrl=" + pictureUrl;
+            let url = "https://script.google.com/macros/s/AKfycbzoUJcJhCEaF2nuadbFHGSLGPVWv3n2wlpQvpZcYAoOqQfVg0doq5NDiyEH_pzhFw8Mhg/exec?&userId=" + userId + "&displayName=" + displayName + "&pictureUrl=" + pictureUrl;
             document.getElementById("formframe").src = url;
         }).catch(err => console.error(err));
     }
